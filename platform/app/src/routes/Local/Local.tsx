@@ -184,29 +184,24 @@ function Local({ modePath }: LocalProps) {
                 src="./ohif-logo.svg"
                 alt="OHIF"
               />
-              <div className="space-y-2 pt-4 text-center">
+              {/* <div className="space-y-2 pt-4 text-center">
                 {dropInitiated ? (
                   <div className="flex flex-col items-center justify-center pt-48">
                     <LoadingIndicatorProgress className={'h-full w-full bg-black'} />
                   </div>
                 ) : (
                   <div className="space-y-2">
-                    {/* <p className="text-base text-blue-300">
-                      Note: You data is not uploaded to any server, it will stay in your local
-                      browser application
-                    </p> */}
                     <p className="text-xg text-primary-active pt-6 font-semibold">
                       Loading DICOM files here to load them in the Viewer
                     </p>
                     <div className="loader mx-auto" style={loaderStyle}></div>
-                    {/* <p className="text-lg text-blue-300">Or click to </p> */}
                   </div>
                 )}
-              </div>
-              {/* <div className="flex justify-around pt-4 ">
+              </div> */}
+              <div className="flex justify-around pt-4 ">
                 {getLoadButton(onDrop, 'Load files', false)}
                 {getLoadButton(onDrop, 'Load folders', true)}
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
